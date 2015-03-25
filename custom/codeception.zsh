@@ -1,0 +1,7 @@
+alias tf="vendor/bin/codecept run functional"
+alias tu="vendor/bin/codecept run unit"
+alias ti="vendor/bin/codecept run integration"
+alias ts="vendor/bin/codecept run search"
+alias t="vendor/bin/codecept run"
+alias tb="vendor/bin/codecept build"
+alias tc="vendor/bin/codecept clean"
