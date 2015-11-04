@@ -1,4 +1,4 @@
-# Variables
+# Environment variables
 export PIC_HOME="/home/$(whoami)/Documents/pic"
 export PIC_RESSOURCES_PATH="$PIC_HOME/ressources/"
 
@@ -11,7 +11,10 @@ alias dev="cd $PIC_HOME/developpement"
 alias ressources="cd $PIC_HOME/ressources"
 alias GP="cd $PIC_HOME/qualite/GP"
 alias DSQ="cd $PIC_HOME/qualite/DSQ"
+
 alias pull="cd $PIC_HOME; ./gitPull.sh"
+
+# PDF related
 alias pdf="open pdf"
 alias pdf-last="cd pdf;evince `ls -tr | grep ".pdf" | tail -1`&;cd .."
 alias create-pdf="mkdir pdf;touch pdf/.gitkeep;ga pdf/.gitkeep"
