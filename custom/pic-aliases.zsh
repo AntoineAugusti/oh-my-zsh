@@ -1,5 +1,5 @@
 # Environment variables
-export PIC_HOME="/home/$(whoami)/Documents/pic"
+export PIC_HOME="$HOME/Documents/pic"
 export PIC_RESSOURCES_PATH="$PIC_HOME/ressources/"
 
 # Aliases
