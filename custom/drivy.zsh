@@ -1,5 +1,5 @@
 if [ $host = "drivy" ]; then
-    redashHost='redash.antoine-augusti.fr'
+    redashHost='redash.drivy.com'
 
     # Airflow
     alias tunnelAirflow="ssh -L4242:127.0.0.1:8080 ubuntu@$redashHost"
