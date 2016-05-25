@@ -6,8 +6,11 @@ if [ $host = "drivy" ]; then
 
     # Redah
     alias redashUbuntu="ssh ubuntu@$redashHost"
-    alias redashEmbulk="ssh ubuntu@$redashHost -t 'sudo su embulk -c \"cd /home/embulk; /bin/bash\"'"
+    alias redashEmbulk="ssh ubuntu@$redashHost -t 'su -- embulk'"
     alias redash="ssh ubuntu@$redashHost -t 'cd /opt/redash/current; /bin/bash'"
+
+    # Caravel
+    alias caravel="ssh caravel"
 
     # Folders
     alias etl="cd $HOME/Documents/etl"
