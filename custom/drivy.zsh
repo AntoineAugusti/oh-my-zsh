@@ -8,6 +8,7 @@ if [ $host = "drivy" ]; then
     alias redashUbuntu="ssh ubuntu@$redashHost"
     alias redashEmbulk="ssh embulk@$redashHost -t 'cd etl; bash --login'"
     alias redash="ssh ubuntu@$redashHost -t 'cd /opt/redash/current; /bin/bash'"
+    alias redash-socks="ssh -D 1337 -C -N ubuntu@$redashHost -v"
 
     # Caravel
     alias caravel="ssh caravel"
