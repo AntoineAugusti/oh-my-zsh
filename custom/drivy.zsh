@@ -1,4 +1,4 @@
-if [ $host = "drivy" ]; then
+if [ $host = "Antoine's MacBook Pro" ]; then
     redashHost='redash.drivy.com'
 
     # Airflow
