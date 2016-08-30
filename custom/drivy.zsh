@@ -13,7 +13,13 @@ if [ $host = "Antoine's MacBook Pro" ]; then
     # Caravel
     alias caravel="ssh caravel"
 
+    # UDFs
+    alias udf-docs="udf && ruby udf.rb doc| pbcopy && echo 'Copied!'"
+    alias udf-test="udf && ruby udf.rb test $1"
+    alias udf-load="udf && ruby udf.rb load $1"
+
     # Folders
     alias etl="cd $HOME/Documents/etl"
     alias dags="cd $HOME/Documents/etl/dags"
+    alias udf="cd $HOME/Documents/etl/redshift-udfs"
 fi
