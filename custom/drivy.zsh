@@ -4,7 +4,7 @@ if [ $host = "Antoine's MacBook Pro" ]; then
 
     # Redah
     alias redashUbuntu="ssh redash"
-    alias redashEmbulk="ssh redashy-embulk -t 'cd etl; bash --login'"
+    alias redashEmbulk="ssh redash-embulk -t 'cd etl; bash --login'"
     alias redash="ssh redash -t 'cd /opt/redash/current; /bin/bash'"
     alias redash-socks="ssh -D 1337 -C -N redash -v"
 
