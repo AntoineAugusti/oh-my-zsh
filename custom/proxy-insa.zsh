@@ -1,5 +1,7 @@
 os=`uname -s`
+export OS=$os
 host=`hostname | cut -d. -f1`
+export HOST=host
 
 if [ $host = "aaugusti" ] && [ $os = "Linux" ]; then
     export http_proxy='http://cachemad.insa-rouen.fr:3128'
