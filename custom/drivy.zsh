@@ -12,7 +12,7 @@ if [ $host = "Antoine's MacBook Pro" ]; then
     alias caravel="ssh caravel"
 
     # UDFs
-    alias udf-docs="udf && ruby udf.rb doc| pbcopy && echo 'Copied!'"
+    alias udf-docs="udf && ruby udf.rb doc| pbcopy && echo 'Copied! Opening browser to copy and paste' && open https://github.com/drivy/etl/wiki/Redshift-UDFs-documentation/_edit"
     alias udf-test="udf && ruby udf.rb test $1"
     alias udf-load="udf && ruby udf.rb load $1"
 
