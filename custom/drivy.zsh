@@ -1,4 +1,4 @@
-if [ $host = "Antoine's MacBook Pro" ]; then
+if [ $host = "Antoine-MacBook-Pro" ]; then
     # Airflow
     alias tunnelAirflow="ssh -L4242:127.0.0.1:8080 redash"
 
