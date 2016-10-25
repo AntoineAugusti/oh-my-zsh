@@ -23,4 +23,8 @@ if [ $host = "Antoine-MacBook-Pro" ]; then
 
     # Autoload Embulk env variables
     source $HOME/embulk-env.sh
+
+    # Rails
+    alias dstart='foreman start -f Procfile.dev'
+    alias drestart='pgrep unicorn | xargs kill -USR2'
 fi
