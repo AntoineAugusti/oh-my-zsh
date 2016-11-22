@@ -20,6 +20,7 @@ if [ $host = "Antoine-MacBook-Pro" ]; then
     alias dags="cd $HOME/Documents/etl/dags"
     alias udf="cd $HOME/Documents/etl/redshift-udfs"
     alias crails="cd $HOME/Documents/drivy-rails/"
+    alias ops="cd $HOME/Documents/ops/"
 
     # Autoload Embulk env variables
     source $HOME/embulk-env.sh
