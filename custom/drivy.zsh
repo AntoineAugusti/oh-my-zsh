@@ -31,4 +31,5 @@ if [ $host = "Antoine-MacBook-Pro" ]; then
 
     # Aliases
     alias reqFile='rm -f $HOME/Desktop/req.sql && stt $HOME/Desktop/req.sql'
+    alias ddl='etl && cd cli && ruby main.rb generate_ddl $1 $2'
 fi
