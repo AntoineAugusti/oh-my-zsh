@@ -28,6 +28,7 @@ if [ $host = "Antoine-MacBook-Pro" ]; then
     # Rails
     alias dstart='foreman start -f Procfile.dev'
     alias drestart='pgrep unicorn | xargs kill -USR2'
+    alias circle='open https://circleci.com/gh/drivy/drivy-rails/tree/`git rev-parse --symbolic-full-name --abbrev-ref HEAD`'
 
     # Aliases
     alias reqFile='rm -f $HOME/Desktop/req.sql && stt $HOME/Desktop/req.sql'
