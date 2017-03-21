@@ -14,6 +14,7 @@ if [ $host = "Antoine-MacBook-Pro" ]; then
     alias udf-docs="udf && ruby udf.rb doc| pbcopy && echo 'Copied! Opening browser to copy and paste' && open https://github.com/drivy/etl/wiki/Redshift-UDFs-documentation/_edit"
     alias udf-test="udf && ruby udf.rb test $1"
     alias udf-load="udf && ruby udf.rb load $1"
+    alias udf-drop="udf && ruby udf.rb drop $1"
 
     # Folders
     alias etl="cd $HOME/Documents/etl"
@@ -29,6 +30,7 @@ if [ $host = "Antoine-MacBook-Pro" ]; then
     alias dstart='foreman start -f Procfile.dev'
     alias drestart='pgrep unicorn | xargs kill -USR2'
     alias circle='open https://circleci.com/gh/drivy/drivy-rails/tree/`git rev-parse --symbolic-full-name --abbrev-ref HEAD`'
+    alias specs='zeus rspec $(git diff --name-only master..HEAD | grep -e "^spec/.*_spec.rb$")'
 
     # Aliases
     alias reqFile='rm -f $HOME/Desktop/req.sql && stt $HOME/Desktop/req.sql'
