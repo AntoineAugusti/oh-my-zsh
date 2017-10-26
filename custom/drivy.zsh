@@ -22,15 +22,19 @@ if [ $host = "Antoine-MacBook-Pro" ]; then
     alias udf="cd $HOME/Documents/etl/redshift-udfs"
     alias crails="cd $HOME/Documents/drivy-rails/"
     alias ops="cd $HOME/Documents/ops/"
+    alias tools="cd $HOME/Documents/drivy-tools/"
 
     # Autoload Embulk env variables
     source $HOME/embulk-env.sh
+    # Autoload Airflow env variables
+    source $HOME/airflow-env.sh
 
     # Rails
     alias dstart='foreman start -f Procfile.dev'
     alias drestart='pgrep unicorn | xargs kill -USR2'
     alias circle='open https://circleci.com/gh/drivy/drivy-rails/tree/`git rev-parse --symbolic-full-name --abbrev-ref HEAD`'
     alias specs='zeus rspec $(git diff --name-only master..HEAD | grep -e "^spec/.*_spec.rb$")'
+    alias pullRails='crails && gpp && bundle && yarn && bin/rake db:migrate RAILS_ENV=test && bin/rake db:migrate'
 
     # Aliases
     alias reqFile='rm -f $HOME/Desktop/req.sql && stt $HOME/Desktop/req.sql'
